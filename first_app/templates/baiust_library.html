@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAIUST Library</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        .navbar .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Section */
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .about-section {
+            text-align: left;
+        }
+
+        .about-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .about-section h2 {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+
+        /* Button Styles */
+        .ask-librarian-btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .ask-librarian-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home'%}">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <section class="about-section">
+            <h1>BAIUST Library</h1>
+            <p>
+                BAIUST Library provides up to date services and information resources to the students, faculties, officers as well as staff members of BAIUST. The library team is dedicated to evolve new technologies and ways of services to students and faculties. The library collection is growing day by day (At present total number of books stands above 14,000 additionally 3500 e-books are there). Most of the collections of BAIUST library are closely related to the programs the university offers. All collections are classified, catalogued and displayed using international standards. The library preserves books, periodicals, newspapers, journals, audio-visual materials (DVD/CDs) etc. The library subscribes foreign and local magazines, journals, e-journals, and almost all the leading daily newspapers of Bangladesh.
+            </p>
+            <h2>Mission</h2>
+            <p>
+                The Library's mission is to provide comprehensive resources and services in support of the research, teaching, and learning needs of the University community. 
+            </p>
+            <h2>Vission</h2>
+            <p>
+                Develop a world-class Knowledge Resource Centre and provide innovative new services and collections to the teaching, learning and research communities, using latest technological developments of 21st century.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

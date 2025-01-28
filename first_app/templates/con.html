@@ -1,0 +1,133 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 200px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+        }
+        .card h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        .card p {
+            margin: 0;
+            color: #555;
+        }
+        .card a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+        .title {
+            color: orange;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .navbar {
+            position: fixed; /* Fixes the navbar at the top */
+            top: 0; /* Ensures it stays at the top */
+            width: 100%; /* Spans the full width */
+            background-color: #000; /* Background color */
+            color: #fff; /* Text color */
+            padding: 10px 20px;
+            z-index: 1000; /* Ensures it's above other content */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+      
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+      
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .ask-librarian {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .navbar .nav-link {
+            color: rgb(254, 253, 253) !important;   
+            height: 19%; 
+        }
+        .bg-primary {
+            --bs-bg-opacity: 1;
+            background-color:#230609 !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Library</h1>
+    <div class="container">
+        <div class="card">
+            <div class="title">Library Cataloguer</div>
+            <img src="{% static 'image/pic4.jpg' %}" alt="Jakaria Shaikh">
+            <h3>Jakaria Shaikh</h3>
+            <p><a href="#">jakaria.library@baiust.ac.bd</a></p>
+        </div>
+
+        <div class="card">
+            <div class="title">Library Cataloguer</div>
+            <img src="{% static 'image/pic5.jpg' %}" alt="Md. Mojahidul Islam">
+            <h3>Md. Mojahidul Islam</h3>
+            <p><a href="#">mojahidul.library@baiust.ac.bd</a></p>
+        </div>
+    </div>
+    <div class="container">
+      <div class="card">
+          <div class="title">Book Sorter</div>
+          <img src="{% static 'image/pic3.jpg' %}" alt="Mohammad Ferdaus Alam">
+          <h3>Mohammad Ferdaus Alam</h3>
+      </div>
+
+      <div class="card">
+          <div class="title">Library Attendant</div>
+          <img src="{% static 'image/pic1.jpg' %}" alt="Md Monirul Islam">
+          <h3>Md Monirul Islam</h3>
+      </div>
+
+      <div class="card">
+        <div class="title">Deputy Librarian</div>
+        <img src="{% static 'image/pic2.jpg' %}" alt="Md Habibullah">
+        <h3>Md Habibullah</h3>
+        <p><a href="dy.librarian@baiust.ac.bd">dy.librarian@baiust.ac.bd</a></p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Individual Study Table</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      .study-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        width: 90%;
+        max-width: 1200px;
+        border-radius: 10px;
+      }
+
+      .content {
+        width: 60%;
+      }
+
+      h1,
+      h2 {
+        color: #00509e;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .content p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+
+      .image {
+        width: 35%;
+        text-align: center;
+      }
+
+      .image img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .no-activities {
+        text-align: center;
+        margin: 40px auto;
+        width: 90%;
+        max-width: 800px;
+      }
+      .no-activities img {
+        max-width: 300px; /* Adjust width to an average size */
+        max-height: 300px; /* Ensure it's not too large */
+        display: inline-block;
+        margin: 0 auto;
+        border: 2px solid #ccc; /* Optional: Add a border for better appearance */
+        border-radius: 10px; /* Optional: Rounded edges */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow for aesthetics */
+      }
+
+      .no-activities h2 {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Individual Study Table Section -->
+    <section class="study-section">
+      <div class="content">
+        <h1>Individual Study Table</h1>
+        <p>
+          Private area for focused study with a comfortable chair and desk.
+          <br />
+          Quiet space for uninterrupted work, with ample lighting and workspace.
+          <br />
+          Perfect for individual study sessions, offering a calm environment for
+          deep focus.
+        </p>
+      </div>
+      <div class="image">
+        <img src="{% static 'image/table.jpg' %}" alt="Individual Study Table" />
+      </div>
+    </section>
+
+    <!-- Group Discussion Table Section -->
+    <section class="study-section">
+      <div class="content">
+        <h2>Group Discussion Table</h2>
+        <p>
+          Library group discussion tables are available only for BAIUST faculty
+          and students <br />
+          to meet and collaborate on their projects.
+        </p>
+      </div>
+      <div class="image">
+        <img src="{% static 'image/group.jpg' %}" alt="Group Discussion Table" />
+      </div>
+    </section>
+
+    <!-- Activities to Avoid Section -->
+    <section class="no-activities">
+      <h2>Please Follow the Instruction</h2>
+      <img src="{% static 'image/notice.jpg' %}" alt="No Sound Allowed" />
+      <img src="{% static 'image/notice2.jpg' %}" alt="No Sound Allowed" />
+    </section>
+  </body>
+</html>
